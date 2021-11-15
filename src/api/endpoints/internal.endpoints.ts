@@ -6,7 +6,7 @@ class InternalEndpoints {
 
     constructor() {
         this.client = axios.create({
-            baseURL: 'http://localhost:3000',
+            baseURL: process.env.NEXT_PUBLIC_APP_BACKEND_INTERNAL_URL_API,
         });
     }
 
