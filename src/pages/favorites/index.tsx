@@ -32,14 +32,12 @@ const Favorites: NextPage<IFavoritesPage> = ({ articles, total }) => {
 
     return (
         <>
-            {articles.length !== 0 && (
-                <ArticlesWrapper
-                    articles={data?.pages}
-                    hasNextPage={hasNextPage}
-                    fetchNextPage={fetchNextPage}
-                    isFetching={isFetching}
-                />
-            )}
+            <ArticlesWrapper
+                articles={data?.pages}
+                hasNextPage={hasNextPage}
+                fetchNextPage={fetchNextPage}
+                isFetching={isFetching}
+            />
         </>
     );
 };
